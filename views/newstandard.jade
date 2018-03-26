@@ -1,0 +1,22 @@
+extend layout 
+
+block content
+    h3= title
+    form#form_add_standard(name="addstandard", method="post", action="/addstandard")
+        span Nom
+        span &nbsp;
+        input#input_name(type="text", placeholder="Nom", name="Nom")
+        br
+        br
+        span Prenom
+        span &nbsp;
+        input#input_prenom(type="text", placeholder="Prenom", name="Prenom")
+        br
+        br
+        span Ville
+        span &nbsp;
+        input#input_ville(type="text", placeholder="Ville", name="Ville")
+        br
+        br
+
+        button#submit_standard(type="submit") submit

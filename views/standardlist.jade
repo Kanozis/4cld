@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h3.
+        Standards
+    ul
+        each standard, i in standardlist
+            li#standard_list_item
+                a(href="#") #{standard.Nom} #{standard.Prenom} lives at #{standard.Ville}
